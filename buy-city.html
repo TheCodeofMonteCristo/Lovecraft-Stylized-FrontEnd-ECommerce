@@ -1,0 +1,39 @@
+<!-- buy-city.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase City - City of R'lyeh</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navbar for navigation -->
+    <nav>
+        <div class="navbar-logo">
+            <img src="assets/logo.png" alt="Lovecraftian E-commerce Logo">
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <!-- Purchase confirmation section -->
+    <div class="purchase-section">
+        <h2>Confirm Purchase of City of R'lyeh</h2>
+        <p>You are about to purchase the City of R'lyeh for 100,000,000 intergalactic credits. Proceed?</p>
+        <button class="purchase-button" onclick="purchaseCity()">Confirm Purchase</button>
+        <button class="purchase-button" onclick="window.location.href='index.html'">Cancel</button>
+    </div>
+
+    <script>
+        // Simulate city purchase (mock backend logic)
+        function purchaseCity() {
+            alert("You have successfully purchased the City of R'lyeh!");
+            window.location.href = 'index.html'; // Redirect back to homepage after purchase
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- reviews.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Reviews</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navbar for navigation -->
+    <nav>
+        <div class="navbar-logo">
+            <img src="assets/logo.png" alt="Lovecraftian E-commerce Logo">
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <!-- Review section -->
+    <div class="reviews-section">
+        <h2>Write a Review for City of R'lyeh</h2>
+
+        <!-- Review Form -->
+        <form id="review-form">
+            <label for="review-name">Your Name (or alias):</label>
+            <input type="text" id="review-name" name="name" required placeholder="Enter your name">
+
+            <label for="review-text">Your Review:</label>
+            <textarea id="review-text" name="review" required placeholder="Write your review here..." rows="4"></textarea>
+
+            <label for="review-rating">Rating:</label>
+            <select id="review-rating" name="rating">
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <button type="submit" class="purchase-button">Submit Review</button>
+        </form>
+    </div>
+
+    <script>
+        // Handle review submission (mock implementation)
+        document.getElementById('review-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert("Thank you for your review! It will be displayed shortly.");
+            // In a real scenario, we would send the data to a backend for processing.
+            window.location.href = 'index.html'; // Redirect to homepage after submission
+        });
+    </script>
+</body>
+</html>

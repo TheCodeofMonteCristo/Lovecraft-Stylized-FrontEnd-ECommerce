@@ -20,3 +20,31 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+
+### 2. **.gitignore** (Files to Ignore in Git)
+
+This file tells Git which files and directories it should ignore when tracking changes in the repository. Typically, it includes files related to IDEs, build files, and dependency directories.
+
+```gitignore
+# Ignore node_modules (if using npm)
+node_modules/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore operating system files
+.DS_Store   # macOS
+Thumbs.db   # Windows
+
+# Ignore IDE config files
+.idea/      # JetBrains IDEs
+.vscode/    # VS Code
+
+# Ignore build directories (if any build step is implemented in the future)
+dist/
+build/
+
+# Ignore any other local configuration files
+*.env

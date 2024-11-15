@@ -1,0 +1,55 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navbar for navigation -->
+    <nav>
+        <div class="navbar-logo">
+            <img src="assets/logo.png" alt="Lovecraftian E-commerce Logo">
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <!-- Cart section -->
+    <div class="cart-section">
+        <h2>Your Cart</h2>
+        <p>You have the following cities in your cart:</p>
+
+        <!-- Example cart items (could be dynamically generated) -->
+        <div class="city-item">
+            <img src="assets/city1.jpg" alt="City of R'lyeh">
+            <h2>City of R'lyeh</h2>
+            <p>Price: 100,000,000 intergalactic credits</p>
+            <button class="purchase-button">Remove from Cart</button>
+        </div>
+
+        <div class="city-item">
+            <img src="assets/city2.jpg" alt="Dunwich Town">
+            <h2>Dunwich Town</h2>
+            <p>Price: 75,000,000 intergalactic credits</p>
+            <button class="purchase-button">Remove from Cart</button>
+        </div>
+
+        <!-- Checkout button -->
+        <button class="purchase-button" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+
+    <script>
+        // Simulate checkout process
+        function checkout() {
+            alert("Proceeding to checkout. (This is a mockup!)");
+            window.location.href = 'index.html'; // Redirect to homepage after checkout
+        }
+    </script>
+
+</body>
+</html>
